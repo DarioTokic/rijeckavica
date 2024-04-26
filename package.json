@@ -1,0 +1,44 @@
+{
+	"name": "rijeckavica",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"server": "nodemon server.js",
+		"client": "npm run dev --prefix client"
+	},
+	"author": "Dario Tokic",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^1.6.8",
+		"bcrypt": "^5.1.1",
+		"chalk": "^4.1.2",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"express-mysql-session": "^3.0.2",
+		"express-session": "^1.18.0",
+		"hpp": "^0.2.3",
+		"jsonwebtoken": "^9.0.2",
+		"loadash": "^1.0.0",
+		"luxon": "^3.4.4",
+		"multer": "^1.4.5-lts.1",
+		"passport": "^0.7.0",
+		"passport-google-oauth20": "^2.0.0",
+		"pinia": "^2.1.7",
+		"sequelize": "^6.37.3",
+		"serve-static": "^1.15.0",
+		"vite-plugin-vuetify": "^2.0.3",
+		"vue-router": "^4.3.2",
+		"vue-tabler-icons": "^2.21.0",
+		"vuetify": "^3.5.17",
+		"xss-clean": "^0.1.4"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.2",
+		"nodemon": "^3.1.0",
+		"prettier": "^3.2.5",
+		"sequelize-cli": "^6.6.2"
+	}
+}
